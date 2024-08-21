@@ -5,8 +5,9 @@ const NotFoundPage = () => {
   const Navigate = useNavigate();
   return (
     <>
-      <div className="bg-slate-400 w-200 text-center text-gray-100 text-9xl p-5 mx-28 my-40 shadow-lg shadow-white/80">
+      <div className="bg-gray-500 w-200 text-center text-gray-100 text-9xl p-5 mx-28 my-32 shadow-lg shadow-white/80">
         404
+        <div className="text-teal-400">Page Not Found</div>
       </div>
 
       <button

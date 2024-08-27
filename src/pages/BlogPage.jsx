@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import PostCard from "../components/layout/posts/postCard";
 import MainFooter from "../components/layout/footer/MainFooter";
+import NotFoundPage from "./NotFoundPage";
 
 const BlogPage = () => {
   const Navigate = useNavigate();
@@ -88,8 +89,8 @@ const BlogPage = () => {
             </div>
           )}
           {error && (
-            <div className="text-center font-extrabold mt-4 text-red-600">
-              {error}
+            <div className="text-center font-extrabold mt-4 text-red-600 border bg-yellow-300 p-5">
+              {error.message}
             </div>
           )}
 
